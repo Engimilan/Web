@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: 'poppins';
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: blue;
+        }
+        .nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        .nav ul li{
+            margin: 0 10px;
+            padding: 0 10px;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+       </style>
+    <div class="nav">
+        
+        <div class="nav-links">
+            <ul>
+                <li><a href="keplink.html">Kép</a></li>
+                <li><a href="lista.html">Kedvenc tantárgyam és a hobbim</a></li>
+                <li><a href="tablazat.html">Órarend</a></li>
+                <li><a href="index.html">Főoldal</a></li>
+            </ul>
+        </div>  
+    </div>
+   
+        <h1>Személyes adatok megadása</h1>
+
+       <ul>
+        <li>Teljes név:</li>
+        <input type="text">
+        <br><br>
+        <li>Nem:</li>
+        <input type="radio" name="gender"> Férfi
+        <input type="radio" name="gender"> Nő
+        <br><br>
+        <li>Születési dátum:</li>
+        <input type="date">
+        <br><br>
+        <li>Lakcím (irányítószám, város, utca, házszám):</li>
+        <input type="text">
+        <br><br>
+        <li>Telefonszám:</li>
+        <input type="text">
+        <br><br>
+        <li>Email cím:</li>
+        <input type="text">
+        <br><br>
+        <li>Milyen típusú iskolába jársz:</li>
+        <input type='checkbox'> Általános Iskola 
+        <input type='checkbox'> Középiskola
+        <input type='checkbox'> Egyetem
+        <input type='checkbox'> Főiskola
+        <input type='checkbox'> Egyik sem
+        <br><br>
+        <li>Intézmény neve:</li>
+        <input type="text">
+        <br><br>
+        <li>A kitöltés pontos ideje:</li>
+        <input type="date"> <input type="time">
+        <br><br>
+        <li>Ha kész nyomd meg!</li>
+        <input type="submit">
+       </ul>
+</body>
+</html>
