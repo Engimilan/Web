@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Pitagorasz tétel</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="keplink.html">Képlink</a></li>
+            <li><a href="lista.html">Lista</a></li>
+            <li><a href="tablazat.html">Órarend</a></li>
+            <li><a href="urlap.html">Űrlap</a></li>
+            <li><a href="evszakok.html">Évszakok</a></li>
+            <li><a href="szamologep.html">Számológép</a></li>
+            <li><a class="active" href="pitagorasz.html">Pitagorasz</a></li>
+        </ul>
+    </div>
+    <h1 id="font">Pitagorasz-tétel</h1>
+
+    <center>
+        <br><br>
+        <img src="img/pitag.png" width="800" >
+        <br><br>
+        <input type="number" name="a" id="a" placeholder="a ">+
+        <input type="number" name="b" id="b" placeholder="b ">
+        <button onclick="pitagorasz(a.value, b.value)">Számítás </button> 
+        <p id="eredmeny" >c</p>
+
+        <script>
+            function pitagorasz(a, b) {
+                document.getElementById('eredmeny').innerHTML = Math.sqrt(a * a + b * b)
+            }
+        </script>
+    </center>
+
+    <div class="footer">
+        <p>Engi Milán<br>
+            <a href="mailto:engim@kkszki.hu">engim@kkszki.hu</a></p>
+    </div>
+
+</body>
+</html>
