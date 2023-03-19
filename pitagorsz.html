@@ -39,8 +39,8 @@
         <br><br>
         <img src="img/pitag.png" width="800" >
         <br><br>
-        <input type="number" name="a" id="a" placeholder="a ">+
-        <input type="number" name="b" id="b" placeholder="b ">
+        <input type="number" name="a" id="a" oninput="rajz()" placeholder="a ">+
+        <input type="number" name="b" id="b"  oninput="rajz()" placeholder="b ">
         <button onclick="pitagorasz(a.value, b.value)">Számítás </button> 
         <p id="eredmeny" >c</p>
 
@@ -48,16 +48,13 @@
             function pitagorasz(a, b) {
                 document.getElementById('eredmeny').innerHTML = Math.sqrt(a * a + b * b)
             }
-                
-             function rajz(){
+            function rajz(){
                 const hsz = document.getElementById('haromszog')
                 hsz.style = 'border-top:"+ a.value +"px solid transparent' + 'border-left:"+ b.value +" px solid rgb(8, 255, 8)'
             }
-                
         </script>
 
      <div id="haromszog"></div>
-            
     </center>
 
     <div class="footer">
